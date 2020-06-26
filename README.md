@@ -59,5 +59,28 @@ References:
 ## Question 11
 
 ## Question 12
+JavaScript Object Notation (JSON) is a format that is easy for humans to read and write and for machines to parse and generate. In JavaScript, JSON is a string so it is not usable in JavaScript right away. The JSON string must first be passed through the JSON.parse method. For example rake the JSON string: 
+```
+'[{"name":"Adele","firstAlbum":"19","biggestHit":"Hello"},{"name":"Lady Gaga","firstAlbum":"The Fame”,”biggestHit":"Shallow"}]'
+```
+To make this usable in JavaScript:
+```javascript
+let singersArray = JSON.parse( '[{"name":"Adele","firstAlbum":"19","biggestHit":"Hello"},{"name":"Lady Gaga","firstAlbum":"The Fame”,”biggestHit”:”Shallow”}]')
+
+console.log(singersArray) => [
+  { name: 'Adele', firstAlbum: '19', biggestHit: 'Hello' },
+  { name: 'Lady Gaga', firstAlbum: 'The Fame', biggestHit: 'Shallow' }
+]
+```
+The revers of the .parse() method is the .stringify() method which converts JavaScript objects into JSON strings which can be transferred more easily.
+```javascript
+let singersJSON = JSON.stringify([
+  { name: 'Adele', firstAlbum: '19', biggestHit: 'Hello' },
+  { name: 'Lady Gaga', firstAlbum: 'The Fame', biggestHit: 'Shallow' }
+])
+
+console.log(singersJSON) => [{"name":"Adele","firstAlbum":"19","biggestHit":"Hello"},{"name":"Lady Gaga","firstAlbum":"The Fame","biggestHit":"Shallow"}]
+```
+
 
 ## Question 13

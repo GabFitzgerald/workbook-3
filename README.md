@@ -25,9 +25,20 @@ References:
 - https://medium.com/@jonathanmines/the-ultimate-github-collaboration-guide-df816e98fb67
 - https://code.tutsplus.com/tutorials/how-to-collaborate-on-github--net-34267
 
-
-
 ## Question 2
+According to the International Organisation for Standardization (ISO) and the Internation Electortechnical Commission (IEC) information technology standards, the most important aspects of quality software are functionality, reliability, usability, efficiency, maintainability and portability.
+
+1. <b>Functionality:</b> The essential purpose of any product or service. It can be broken down into a set of attributes that relies on the existence of a set of functions and their specified properties. For example, a sale order processing system should be able to record customer information. This can be broken down into many functions such as recording sales of product, price and quantity, calculating total price, calculating sales tax, etc. The functions of the app must satisfy the stated or implied needs of the product. Functionality can be broken down into many sub categories including suitability, accuracy, interoperability, security and functionality compliance. 
+2. <b>Reliability:</b> The capability of the software to maintain its service provision under defined conditions for a defined period of time. For example, if the network goes down for 1 minute, the system should be able to recover and continue functioning after that 1 minute. Reliability can be broken down into sub categories including maturity, fault tolerance, recoverability, reliability compliance, and recently added: availability. 
+3. <b>Usability:</b> The effort required by the stated or implied users to use the software. For example placing commonly used features in prominent locations on the screen does not affect functionality, but affects the usability. The ISO breaks down usability into several subcategories such as understandability, learnability, operability, attractiveness, and usability compliance as well as user error protection and accessibility.  
+4. <b>Efficiency:</b> The relationship between the amount of resources used and the level of performance of the software. This may include the amount of disk space, memory or bandwidth used by an application for a given function, or how quickly a function can be completed. An example is using a merge sort which is more efficient than a bubble sort. The ISO breaks down efficiency into several subcategories such as time behaviour, resource utilisation, and efficiency compliance. 
+5. <b>Maintainability:</b> The effort required to make modifications to the software. This characteristic addresses the ability to identify and fix faults in software. It is impacted by the code’s readability, complexity and modularisation. The ISO breaks down maintainability into several subcategories such as analysability, changeability, stability, testability, and maintainability compliance. 
+6. <b>Portability:</b> The ability of the software to be transferred from one environment from one environment to another. Implementation practices and object oriented design can contribute to the portability of a given software. The ISO breaks down portability into several subcategories including adaptability, installability, co-existence, replaceability and portability compliance. 
+
+
+References:
+- https://www.tutorialspoint.com/software_testing/software_testing_iso_standards.htm
+- http://www.sqa.net/iso9126.html
 
 ## Question 3
 

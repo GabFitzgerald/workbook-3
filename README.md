@@ -63,6 +63,21 @@ References:
 - https://onextrapixel.com/12-skills-you-need-to-develop-a-website/
 
 ## Question 5
+In regards to my portfolio project, there were a number of technical skills were required to complete the project and overcome challenges.
+1. <b>HTML:</b> I needed to know how to write HTML in order to build the basic structure of the page. HTML is the basic markup language for creating webpages.
+2. <b>CSS:</b> Knowing how to code the styling to the website was essential to completing the project, so that the contents of the page were positioned correctly, it overall was nice to look at. On top of design skills, being able to implement ideas using CSS is essential to building a website.  
+3. <b>Security:</b> Some basic understanding of security is important for protecting the website and its users from malicious attack. Specifically for this project, an understanding of how to implement sub-resource integrity was necessary to ensure that the exact version of the css file intended is pulled in when loading the website, rather than any malicious code.
+4. <b>Deployment:</b> I needed to know how to make the website available on the internet, therefore it was necessary to know how to turn code I’d written on my machine into a website available on the web by deploying it.
+5. <b>Design:</b> At least some basic design skills are necessary to build an effective website. First by understanding how to build wireframes from which a website can be build. As well as how to design an easy user experience. 
+6. <b>Responsiveness:</b> This means the website should work on all devices and browsers. A strong understanding of flex box and mobile first design is necessary, as well as a good understanding of the differences between browsers.
+7. <b>Understanding Accessibility:</b> It is necessary that websites are built so that everyone can use them. For example, this means a strong understanding of semantic tags for html. Effective colour schemes are used so that anyone can see the images. Alt options for images should be used if the image doesn’t load, or the user cannot see them
+8. <b>Version Control:</b> This was required to ensure if a change is made at any stage during the project that breaks the code, I can roll back to the previously working version. This also is achieved by working on feature branches which are only pushed to the master branch when the feature is complete and working with the main program. This ensures that the master branch is always working and the risk of having to roll back is decreased. 
+
+There were also a number of soft skills that helped my overcome the challenges while completing the project.
+1. <b>Time management:</b> As we only had one week to complete the task, effective time management skills were required to complete the task. It was important to plan my time effectively to have a minimum viable product completed early on, to which features and content could be added. It was also important that I didn’t spend too much time of small tasks that did not contribute too much to the project such as deciding on fonts or colour schemes, allowing more time to be allocated to tasks such as adding security, features or complexity to the website.
+2. <b>Ability to Learn: </b> It was vital that I was able to take the little knowledge I had on building websites and expand on it to build a complete product. While we had learned a lot in class, there were many features that I wanted to add which required me to be resourceful, looking for information on the web, and learning it well enough to apply it to my application. This included learning how to build a hand burger navigation button.
+3. <b>Understanding the target audience:</b> This was important in building all aspects of the website. Every button, every piece of content, and all of the functionality of the website had to be built with the intent to show the website to a potential employer or client. 
+4. <b>Creativity:</b> The design and structure of a website is ultimately a creative process, and being able to build something unique is important for a portfolio to standout. 
 
 ## Question 6
 

@@ -244,9 +244,15 @@ There are 8 basic data types in JavaScript: number, bigint, string, boolean, nul
 
 1. <b>Number.</b> For numbers of any kind: integers and floats. (Integers are limited by ±253)
 
+<hr>
+
 2. <b>Bigint.</b> For integer numbers of arbitary length.
 
+<hr>
+
 3. <b>String.</b> For strings. May have 
+
+<hr>
 
 4. <b>Boolean.</b> This type has only two values: true and false. This type is often used to store "yes" or "no" values. Such as:
 ```javascript
@@ -262,13 +268,19 @@ if (x < 5) {
 }
 // "x is less than 5" is logged
 ```
-
+<hr>
 
 5. <b>Null.</b> For unknown values, 
 
+<hr>
+
 6. <b>Undefined.</b> For unasigned values 
 
+<hr>
+
 7. <b>Object.</b> For more complex data structures, including arrays
+
+<hr>
 
 8. <b>Symbol</b> This type is used to create unique identifiers for objects. This type was introduced in ES6, and can be created using the Symbol() function. Every symbol created by Symbol() is unique, so it has its now identity. For example: 
 ```javascript

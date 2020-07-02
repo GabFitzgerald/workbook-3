@@ -189,17 +189,35 @@ switch(x) {
 ```
 This will log both 'x is 2!' and 'x is 2 again!' to the console, as both matches have been found and run without being stopped by a break statement. 
 
-Control flow is also has a very important application in error handling in JavaScript. In Javascript, the throw statement will…
+Control flow is also has a very important application in error handling in JavaScript. In Javascript, the throw keyword will stop running the code and generate and error. For example:
 
-Try catch
+```javascript
+throw "GabError" // creates a custom error called GabError
+console.log("code after") //this code is not run
+```
 
+Finally, try..catch statements can control program flow and generate custom error messages. Usually, these blocks are used to handle errors that occur in the program while still running the code. The 'try' keyword defines a block of code to be tested for errors while being executed, the the 'catch' keyword defines the code to be run if an error occurs in the try block. A 'finally' statement can also be used to execute code after the try and catch regardless of the result. For example:
 
+```javascript
+const x = ""
+try {
+    if(x == "") throw "Empty input";  //code to try
+}
+catch(err) {
+    console.log(err) //code to handle errors => Empty Imput
+}
+finally {
+    console.log(`Your input: ${x}`)  //code to be executed regardless of the try / catch result
+}
+```
+In this case, the try block is run first. Since x the expression is true in the if statement, the throw statement is run. This is caught by the catch block as err. Then logged to the console by the catch block. The finally statement is then run, logging 'Your input: ' to the console. If x was defined a "hello" at the start, the try block would not have thrown an error, the catch block would not have been run, then the finally block would log "Your input: hello" to the console. 
 
 References:
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling
 - https://developer.mozilla.org/en-US/docs/Glossary/Control_flow
 - https://www.computerhope.com/jargon/c/contflow.htm
 - https://www.w3schools.com/js/js_switch.asp
+- https://www.w3schools.com/jsref/jsref_throw.asp
 
 
 

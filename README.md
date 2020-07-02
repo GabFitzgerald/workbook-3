@@ -242,11 +242,20 @@ References:
 
 There are 8 basic data types in JavaScript: number, bigint, string, boolean, null, undefined, object and symbol. 
 
-1. <b>Number.</b> For numbers of any kind: integers and floats. (Integers are limited by ±253)
+1. <b>Number.</b> This data type is for numbers of any kind: integers and floats. (Integers are limited by ±253). Many math operations can be used on this data type including addition ( `+` ), subtraction ( `-` ),  multiplication (`*`), division (`/`) and more. 
+
+Aside from regular numbers, there are also special numeric values in JavaScript which are also part of the Number data type: `Infinity`, `
+
+Besides regular numbers, there are so-called “special numeric values” which also belong to this data type: Infinity, -Infinity and NaN.
+
+
+
+// mention Infinity and NaN
+// talk about some of the weird things numbers do in javascript and why. 1.1 + 1.2??
 
 <hr>
 
-2. <b>Bigint.</b> For integer numbers of arbitary length.
+2. <b>Bigint.</b> For integer numbers of arbitrary length.
 
 <hr>
 

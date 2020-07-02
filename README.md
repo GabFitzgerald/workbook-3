@@ -242,16 +242,33 @@ References:
 
 There are 8 basic data types in JavaScript: number, bigint, string, boolean, null, undefined, object and symbol. 
 
-1. <b>Number.</b> This data type is for numbers of any kind: integers and floats. (Integers are limited by ±253). Many math operations can be used on this data type including addition ( `+` ), subtraction ( `-` ),  multiplication (`*`), division (`/`) and more. 
+1. <b>Number.</b> This data type is for numbers of any kind: integers and floats. Many math operations can be used on this data type including addition (`+`), subtraction (`-`),  multiplication (`*`), division (`/`) and more. E.g.
+```javascript
+1 + 1 // => 2
+10 - 1 // => 9
+13 * 2 // => 26
+14 % 5 // => 4
+1.1 + 1.2 // => 2.3
+```
 
-Aside from regular numbers, there are also special numeric values in JavaScript which are also part of the Number data type: `Infinity`, `
+In JavaScript, numbers have a precision up to 15 digits. When a number has 16 digits or greater, it will be rounded to the nearest 15.
+```js
+9999999999999999 // => 10000000000000000 (15 digits)
+```
+Additionally, floating point numbers don't always behave as expected.
+```js
+0.1 + 0.2 // => 0.30000000000000004
+```
+While we understand math in decimal (base 10), computers do this operation in binary (base 2). In binary, 0.1 is an irrational number ~0.00011001100110011001100110..., must longer than 16 digits, similarly with 0.2. So when they are added together, there is a degree of inaccuracy which can be seen in the result. 
 
-Besides regular numbers, there are so-called “special numeric values” which also belong to this data type: Infinity, -Infinity and NaN.
-
-
-
-// mention Infinity and NaN
-// talk about some of the weird things numbers do in javascript and why. 1.1 + 1.2??
+Aside from regular numbers, there are also special numeric values in JavaScript which are also part of the Number data type: `Infinity`, `-Infinity' and `NaN`. Infinity in JavaScript represents mathematical infinity, which is greater than any number. We get it as a result of dividing by 0:
+```javascript
+ console.log(1/0) // => Infinity
+```
+Negative infinity is the opposite, representing a value lower than all numbers. `NaN` represents a computational error in JavaScript as a result of an undefined or incorrect mathematical operation e.g:
+```javascript
+console.log("hello"/2) // => NaN
+```
 
 <hr>
 

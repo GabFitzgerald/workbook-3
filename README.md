@@ -216,8 +216,27 @@ References:
 
 ## Question 8: Type Coercion
 
+Type coercion in JavaScript automatically (or implicitly) coverts values from one data type to another. This is similar to type conversion except however, type conversion can be either implicit or explicit. For example:
+```javascript
+const value1 = '10'
+const value2 = 1
+let sum = value1 + value2
+console.log(sum) // => 101
+```
+This code logs 101 to the console, because value2 is coerced to a string, then the two values are concatenated together as strings. When given the choice between string and number, JavaScript will coerce values into a string.
 
+Furthermore, in JavaScript you can use two equals signs to allow type coercion and three equals signs to enforce strict coercion.
+```javascript
+1 == “1” //=> true
+1 === “1” //=> false
+```
+So in this code, the first line coerced the number 1 to a string, which evaluated to equal "1", however the 2nd line kept the values strictly their original data type, meaning the expression evaluates to false.
 
+Any data type in JavaScript can be the subject of type coercion. 
+
+References:
+- https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/
+- https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion
 
 ## Question 9
 

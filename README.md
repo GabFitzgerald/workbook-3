@@ -238,7 +238,48 @@ References:
 - https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/
 - https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion
 
-## Question 9
+## Question 9: Data Types
+
+There are 8 basic data types in JavaScript: number, bigint, string, boolean, null, undefined, object and symbol. 
+
+1. <b>Number.</b> For numbers of any kind: integers and floats. (Integers are limited by ±253)
+
+2. <b>Bigint.</b> For integer numbers of arbitary length.
+
+3. <b>String.</b> For strings. May have 
+
+4. <b>Boolean.</b> This type has only two values: true and false. This type is often used to store "yes" or "no" values. Such as:
+```javascript
+let nameIsUnique = true; // yes, name is unique
+let ofLegalAge = false; // no, not legal age
+```
+Booleans are also the result of comparison expressions and therefore used often in contoll flow.
+```javascript
+const x = 2
+console.log(x > 10) // => false
+if (x < 5) {
+  console.log("x is less than 5")
+}
+// "x is less than 5" is logged
+```
+
+
+5. <b>Null.</b> For unknown values, 
+
+6. <b>Undefined.</b> For unasigned values 
+
+7. <b>Object.</b> For more complex data structures, including arrays
+
+8. <b>Symbol</b> This type is used to create unique identifiers for objects. This type was introduced in ES6, and can be created using the Symbol() function. Every symbol created by Symbol() is unique, so it has its now identity. For example: 
+```javascript
+const hello1 = Symbol('hello')
+const hello2 = Symbol('hello')
+console.log(hello1 == hello2) //=> false
+```
+
+References:
+- https://javascript.info/types
+- https://www.freecodecamp.org/news/how-did-i-miss-javascript-symbols-c1f1c0e1874a/#:~:text=Symbols%20are%20new%20primitive%20type,()%20which%20returns%20a%20Symbol.&text=Every%20time%20you%20call%20the,and%20unique%20symbol%20is%20created.
 
 ## Question 10
 

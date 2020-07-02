@@ -94,7 +94,7 @@ There were also a number of soft skills that helped my overcome the challenges w
 9. <b>Time management:</b> I believe my time management for this project was effective. I built a minimum viable product, consisting of the pages, minimal styling and navigation between the pages within the first couple of days, then spent the rest of the time available building on that. This included adding more interesting styling, icons for links, some content and pictures. By giving myself deadlines I never completed something I was 100% happy with, however, I was able to move on and finish a complete project by the end of the time .
 10. <b>Ability to Learn:</b> This project involved a lot of learning as I go scenarios. For example, learning how to build the hamburger navigation button required watching tutorials on YouTube and some articles to get it (mostly) working. This took an couple of hours towards the end of the week, however I was able to pick up the skills necessary to build something I had never built before. I did the same thing with learning how to embed a tweet. This required doing a google search and looking through a few websites before finding what I needed. Through this project I became more resourceful, and my ability to learn quickly improved. 
 
-## Question 7
+## Question 7: Control Flow
 
 Control flow is the order in which statements are executed in a script. JavaScript contains many control flow statements such as if, else and break that determine what section of code in run in a program at any one time. 
 
@@ -102,7 +102,6 @@ For example, the code in a if statement will run if the statement between the pa
 
 ``` javascript 
 const x = 3
-
 if (x === 3) {
   console.log("x is 3!")
 }
@@ -112,7 +111,6 @@ This code logs 'x is 3!' to the console, because the statement between the paren
 
 ``` javascript 
 const x = 2
-
 if (x === 3) {
   console.log("x is 3!")
 } else {
@@ -129,7 +127,6 @@ More cases can be tested using an else if statement. For example:
 
 ```javascript
 const x = 2
-
 if (x === 3) { //condition 1
   console.log("x is 3!") // block 1
 } else if (x === 2) { // condition 2
@@ -145,7 +142,6 @@ When these if else control flow structures start to get more complex, we can use
 
 ```javascript
 const x = 2
-
 switch(x) {
     case (3):
         console.log("x is 3!")
@@ -156,7 +152,6 @@ switch(x) {
     default:
         console.log("x is not 2 or 3")
   }
-
 ```
 
 This code works by evaluating the switch expression once, then comparing the value of the expression to each case. If there is a match, the associated block of code is executed. If there is not match, then teh default code is executed. In this case, the code logs "x is 2!" to the console. If x was defined as 1, the default code would be run loggin "x is not 2 or 3" to the console. The break keyword breaks JavaScript out of the switch block. So if there were, 2 cases that evaluated to true, only the first one would be run. For instance:
@@ -219,9 +214,10 @@ References:
 - https://www.w3schools.com/js/js_switch.asp
 - https://www.w3schools.com/jsref/jsref_throw.asp
 
+## Question 8: Type Coercion
 
 
-## Question 8
+
 
 ## Question 9
 

@@ -96,6 +96,113 @@ There were also a number of soft skills that helped my overcome the challenges w
 
 ## Question 7
 
+Control flow is the order in which statements are executed in a script. JavaScript contains many control flow statements such as if, else and break that determine what section of code in run in a program at any one time. 
+
+For example, the code in a if statement will run if the statement between the parentheses is true. For example:
+
+``` javascript 
+const x = 3
+
+if (x === 3) {
+  console.log("x is 3!")
+}
+```
+
+This code logs 'x is 3!' to the console, because the statement between the parentheses works out to true. However, if x was assigned to 1 at the start of the code, the statement between the parentheses would be false, and the code would not run. An else statement can be used to run code, when the statement is false. For example:
+
+``` javascript 
+const x = 2
+
+if (x === 3) {
+  console.log("x is 3!")
+} else {
+  console.log("x is not 3")
+}
+```
+
+In this case, if the statement is true, the first block of code is run, if the statement is false, the code after the else statement is run. The above code will therefore log "x is not 3" to the console. This can also be written as a ternary operator, which will achieve the same thing with fewer lines of code. If the statement before the question mark evaluates to true, the code before the colon is run, if the statement is false, the code after the colon is run. 
+``` javascript 
+console.log(x === 3 ? "x is 3!" : "x is not 3")
+```
+
+More cases can be tested using an else if statement. For example:
+
+```javascript
+const x = 2
+
+if (x === 3) { //condition 1
+  console.log("x is 3!") // block 1
+} else if (x === 2) { // condition 2
+    console.log("x is 2!") // block 2
+} else {
+    console.log("x is not 2 or 3") // block 3
+}
+```
+
+In this case, block 1 is run as normal if condition 1 is true. The second block is run if condition 1 is false and condition 2 is true. Block 3 is run if both condition 1 and 2 are false. In this case, the code above will log 'x is 2!' to the console as condition 1 is false, condition 2 is true and block 2 is run.
+
+When these if else control flow structures start to get more complex, we can use switch statements to test several conditions. 
+
+```javascript
+const x = 2
+
+switch(x) {
+    case (3):
+        console.log("x is 3!")
+        break
+    case 2:
+        console.log("x is 2!")
+        break
+    default:
+        console.log("x is not 2 or 3")
+  }
+
+```
+
+This code works by evaluating the switch expression once, then comparing the value of the expression to each case. If there is a match, the associated block of code is executed. If there is not match, then teh default code is executed. In this case, the code logs "x is 2!" to the console. If x was defined as 1, the default code would be run loggin "x is not 2 or 3" to the console. The break keyword breaks JavaScript out of the switch block. So if there were, 2 cases that evaluated to true, only the first one would be run. For instance:
+
+```javascript
+const x = 2
+switch(x) {
+    case 2:
+        console.log("x is 2!")
+        break // line 5
+    case 2:
+        console.log("x is 2 again!")
+        break
+    default:
+        console.log("x is not 2 or 3")
+  }
+```
+
+Here the break keyword on line 5, means that only 'x is 2!' is logged to the console. The second break is not needed as the block ends there anyway. Removing the break keywords:
+```javascript
+const x = 2
+switch(x) {
+    case 2:
+        console.log("x is 2!")
+    case 2:
+        console.log("x is 2 again!")
+    default:
+        console.log("x is not 2 or 3")
+  }
+```
+This will log both 'x is 2!' and 'x is 2 again!' to the console, as both matches have been found and run without being stopped by a break statement. 
+
+Control flow is also has a very important application in error handling in JavaScript. In Javascript, the throw statement will…
+
+Try catch
+
+
+
+References:
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling
+- https://developer.mozilla.org/en-US/docs/Glossary/Control_flow
+- https://www.computerhope.com/jargon/c/contflow.htm
+- https://www.w3schools.com/js/js_switch.asp
+
+
+
 ## Question 8
 
 ## Question 9

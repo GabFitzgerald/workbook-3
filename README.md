@@ -259,7 +259,7 @@ There are 8 basic data types in JavaScript: number, bigint, string, boolean, nul
 let nameIsUnique = true; // yes, name is unique
 let ofLegalAge = false; // no, not legal age
 ```
-Booleans are also the result of comparison expressions and therefore used often in contoll flow.
+Booleans are also the result of comparison expressions and therefore used often in control flow.
 ```javascript
 const x = 2
 console.log(x > 10) // => false
@@ -270,11 +270,25 @@ if (x < 5) {
 ```
 <hr>
 
-5. <b>Null.</b> For unknown values, 
+5. <b>Null.</b> Not fitting into any of the types mentioned above, in JavaScript, the null type represents “nothing”, “empty” or “value unknown”. For example:
+```javascript
+let name = null
+```
+This means that the value of the name variable is unknown. 
 
 <hr>
 
-6. <b>Undefined.</b> For unasigned values 
+6. <b>Undefined.</b> Similar to null, undefined is also its own datatype, meaning that a value is unassigned. For example, if a variable is defined, but not set equal to anything, this is will be undefined. E.g:
+```javascript
+let x
+console.log(x) // => undefined
+```
+Values can also be explicitly assigned as undefined. However it is usually recommended that values are assigned null if they are unknown as undefined should be reserved for initially unassigned values:
+```javascript
+let x = 2
+x = undefined
+console.log(x) // => undefined
+```
 
 <hr>
 

@@ -296,11 +296,27 @@ console.log("hello"/2) // => NaN
 
 <hr>
 
-2. <b>Bigint.</b> For integer numbers of arbitrary length.
+2. <b>Bigint.</b> In JavaScript, the number type cannot represent really big or really negative numbers (greater than 9007199254740991, 2<sup>53</sup>-1, or -2<sup>53</sup>-1). Most purposes can be covered, by the number data type, however, in some cases Bigints are required. A BigInt value is created by appending n to the end of an integer:
+```javascript
+const bigInt = 1234567890123456789012345678901234567890n;
+```
 
 <hr>
 
-3. <b>String.</b> For strings. May have 
+3. <b>String.</b> Strings in JavaScript must be surrounded by single quotes, double quotes, or back ticks.
+```javascript
+let single = "Hello"
+let double = 'World'
+let backTicks = `can embed ${single}`
+```
+Single and double quotes are considered simple quote with virtually no difference between them in JavaScript. Back ticks extended functionality quotes which are used to embed variables and expressions into a string by wrapping them in ${…}:
+```javascript
+let name = "Gab";
+// embed a variable
+console.log(`Hello, ${name}!`); // => Hello, Gab!
+// embed an expression
+console.log(`the answer is ${1 + 2}`); // the answer is 3
+``` 
 
 <hr>
 

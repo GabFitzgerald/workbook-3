@@ -42,6 +42,26 @@ References:
 
 ## Question 3
 
+MERN stands for MongoDB, Express JS, React JS and Node JS. The MERN stack is a combination of all of these technologies used to build complex web applications using JavaScript. MERN stack is an open source full stack development framework meaning it provides entire front-end to back-end development components.
+
+<b>MongoDB</b>
+Mongo is used for database management in the MERN framework. It is an open source, cross platform, NoSql DBMS. It is a document oriented database meaning that data is saved using collections and documents, as opposed to a relational database which stores data in tables and rows. This results in faster and easier date integration within applications. Data is stored in binary JSON format allowing for fast exchange between client and server. It can also be used for storage of large volumes of data, an important feature for scalability of applications. The backend of the application, Node.js Express, exports REST APIs and interacts with the database using Mongoose ODM.
+
+<b>Node JS</b>
+Node JS is used for to build out the foundations of the back-end of web applications. It is an open-source, cross platform, JavaScript runtime environment, and runs JavaScript code on the server side, outside of the browser. 
+
+<b>Express JS </b> 
+Express is involved in the back-end development of MERN applications. As a web framework to Node JS, it runs on top of the Node JS managing servers and routes. It is a server side, backend JavaScript framework that simplifies Node helping to write simplified, fast and secure applications.
+
+<b>React JS</b>
+React is used to build out the front-end of MERN applications. It is an open source JavaScript library usually used for single page applications. It enables developers to modify or edit page views without having to refresh the page. A React app is built using components that are composed into complex user interfaces. React components user the render method to input data and return what’s to display. Written is JSX, Babel compiles it to regular JavaScipt. Data can be passed into React components using props. React Client uses Axios to send HTTP Requests and retrieve HTTP Responses. React Router is used for navigating to pages.
+
+References:
+- https://medium.com/@digimktg/what-is-mern-stack-9c867dbad302
+- https://reactjs.org/
+- https://bezkoder.com/react-node-express-mongodb-mern-stack/
+
+
 ## Question 4
 To develop a website, team members will need to have a number of hard skills. 
 

@@ -358,7 +358,32 @@ console.log(x) // => undefined
 
 <hr>
 
-7. <b>Object.</b> For more complex data structures, including arrays
+7. <b>Object.</b> All other data type are considered "primitive" types as the only store one value. Objects however story keyed collection of various data and more complex entities. Objects cover almost every aspect of the JavaScript language. An object can be created with braces (`{...}`) or with object constructor syntax:
+```javascript
+let user = new Object() // "object constructor" syntax
+let user = {}  // "object literal" syntax
+```
+A property is a key value pair, where the key is a string and the value can be any data type. The properties are comma separated in the object, and the key is followed by a colon, then the property value. Keys with many words must use quotes.
+```javascript
+let object = {     // an object
+  name: "Gab",  // by key "name" store value "Gab"
+  age: 20        // by key "age" store value 20
+  "license number": 123456789
+}
+```
+The values of the object's properties can be accessed and changed (unless the object is declared as a constant) with with dot notation. Square brackets must be used for multi word keys.
+```javascript
+object.name // => "Gab"
+object.name = "Gabby"
+object.name // => "Gabby"
+object.age // => 20
+object["license number"] // => 123456789
+```
+
+There are many kinds of objects in JavaScript which belong to the object type including Array to store ordered data collections,
+Date to store the information about the date and time, and Error to store the information about an error.
+
+
 
 <hr>
 

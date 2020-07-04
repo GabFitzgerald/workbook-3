@@ -401,10 +401,83 @@ Arrays can be manipulated in a variety of ways from simple array methods, to sor
 
 <b>Array Methods</b>
 
-explain what an array method does
-explain what specific methods do
-show in code
+Simple array methods in JavaScript allow you to add, remove, and change elements in arrays as well as split or merge arrays. 
 
+* **Add** Elements can be added to the end of an array using the `push()` method and added to the start of an array using the `unshift()` method. Both methods will return the length of the new array.
+```javascript
+let children = ["Gab", "Leo"]
+console.log(children.push("Jerome")) // => 3
+console.log(children) // => [ 'Gab', 'Leo', 'Jerome' ]
+console.log(children.unshift("Brian")) // => 4
+console.log(children) // => [ 'Brian', 'Gab', 'Leo', 'Jerome' ]
+```
+
+The `splice()` method can also be used to add new items to an array. It takes many parameters with the first defining the position of where elements should be added, the second defining how many elements should be removed (0 if added elements). The rest of the parameters define the new elements to be added. This method returns an array of deleted items. The following is an example of added elements with the splice method:
+```js
+let children = ["Gab", "Leo", "Jerome"]
+console.log(children.splice(2, 0, "Rebecca")) // => []
+console.log(children) // => [ 'Gab', 'Leo', 'Rebecca', 'Jerome' ]
+```
+
+* **Remove** Elements can be removed from the end of an array using the `pop()` method and removed from the start of an array using the `unshift()` method. Both methods will return the element that was removed. For example:
+```javascript
+let children = ["Brian", "Gab", "Leo", "Jerome"]
+console.log(children.pop()) // => Jerome
+console.log(children) // => [ 'Brian', 'Gab', 'Leo' ]
+console.log(children.shift()) // => Brian
+console.log(children) // => [ 'Gab', 'Leo' ]
+```
+
+Since arrays are objects in Javascript, elements can also be deleted using the JavaScript operator delete however this leaves holes in the array and is not recommended.
+```js
+let children = ["Gab", "Leo", "Jerome"]
+delete children[1]
+console.log(children) // => [ 'Gab', <1 empty item>, 'Jerome' ]
+```
+
+The splice method can also be used to remove elements using the second parameter.
+```js
+let children = ["Gab", "Leo", "Rebecca", "Jerome"]
+console.log(children.splice(2, 1)) // => ["Rebecca"]
+console.log(children) // => [ 'Gab', 'Leo', 'Jerome' ]
+```
+
+Additionally, the `slice()` method will slice out a piece of an array into a new array without effecting the existing array. The function can take one parameter which will be the element the slice starts. The method can also take 2 parameters represting the start and the end of the slice.
+```js
+let children = ["Gab", "Leo", "Jerome"]
+
+let youngerChildren = children.slice(1)
+console.log(youngerChildren) // => [ 'Gab', 'Leo', 'Jerome' ]
+
+let middleChildren = children.slice(1, children.length - 1)
+console.log(middleChildren) // =>  [ 'Leo' ]
+
+console.log(children) // => [ 'Leo', 'Jerome' ]
+```
+
+
+* **Change**
+Array elements are access with their index number, and can be individually resassigned unless the array was initially declared as a constant. 
+```javascript
+let children = ["Gab", "Madeline", "Jerome"]
+children[1] = "Leo"
+console.log(children) // => [ 'Gab', 'Leo', 'Jerome' ]
+```
+
+* **Merge**
+Arrays can be merged with the `concat()` method. This method creates a new array out of existing arrays without changing the existing arrays, returning the new array. This method can take any nubmer of arrays as arguments, as well as strings.
+```js
+let girls = ["Gab"]
+let boys = ["Leo", "Jerome"]
+let children = girls.concat(boys)
+console.log(children) // => [ 'Gab', 'Leo', 'Jerome' ]
+```
+
+* **Covert to String.** Arrays can also be converted to strings using the `toSting()` method. This method will convert an array of strings to a string of comma separated values. 
+```javascript
+let children = ["Gab", "Leo", "Jerome"]
+console.log(children.toString()) // => Gab,Leo,Jerome
+```
 
 <b>Sorting</b>
 

@@ -380,10 +380,7 @@ object.age // => 20
 object["license number"] // => 123456789
 ```
 
-There are many kinds of objects in JavaScript which belong to the object type including Array to store ordered data collections,
-Date to store the information about the date and time, and Error to store the information about an error.
-
-
+There are many kinds of objects in JavaScript which belong to the object type including Array to store ordered data collections, Date to store the information about the date and time, and Error to store the information about an error.
 
 <hr>
 
@@ -398,9 +395,70 @@ References:
 - https://javascript.info/types
 - https://www.freecodecamp.org/news/how-did-i-miss-javascript-symbols-c1f1c0e1874a/#:~:text=Symbols%20are%20new%20primitive%20type,()%20which%20returns%20a%20Symbol.&text=Every%20time%20you%20call%20the,and%20unique%20symbol%20is%20created.
 
-## Question 10
+## Question 10: Array manipulation
 
-## Question 11
+Arrays can be manipulated in a variety of ways from simple array methods, to sorting and iterations.
+
+<b>Array Methods</b>
+
+explain what an array method does
+explain what specific methods do
+show in code
+
+
+<b>Sorting</b>
+
+
+
+
+<b>Iterating</b>
+
+Iteration methods on arrays with operate on every item in the array. The functions that iterate over arrays in Javascript include:
+* `forEach()` which calls a function on each item in the array. For example:
+  ```javascript
+  let array = ["Gab", "Leo", "Jerome"]
+  function logItem (item) {
+      console.log(item)
+  } 
+  array.forEach(logItem) // => Gab Leo Jerome
+  ```
+
+* `map()`creates a new array by performing a function on each element it the array without changing the original array. For example:
+```javascript
+let numbers = [1, 2, 3]
+let numbersTimesTwo = numbers.map(timesTwo)
+
+function timesTwo(number) {
+  return number * 2
+}
+
+console.log(numbersTimesTwo) // => [2, 4, 6]
+```
+
+* `filter()` creates a new array with array elements that passes a test. For example:
+```javascript
+let numbers = [1, 2, 3, 10]
+let over2 = numbers.filter(filterFunction);
+
+function filterFunction(number) {
+  return number > 2
+}
+
+console.log(over2) // => [3, 10]
+```
+
+Other iterating methods include `reduce()`, which runs a function on each array element to produce a single value running left to right, `reduceRight()`, which does the same thing running right to left. `every()` checks if all elements pass a test. `some()` checks if some elements pass a test. `lastIndexOf()` searches an array for an array value and returns its position. `find()` returns the value of the first array element that passes a test function. `findIndex()` return the index of that element. 
+
+
+
+References:
+- https://www.w3schools.com/js/js_array_methods.asp
+
+
+## Question 11: Object manipulation
+
+
+
 
 ## Question 12
 JavaScript Object Notation (JSON) is a format that is easy for humans to read and write and for machines to parse and generate. In JavaScript, JSON is a string so it is not usable in JavaScript right away. The JSON string must first be passed through the JSON.parse method. For example rake the JSON string: 

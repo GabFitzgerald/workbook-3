@@ -481,8 +481,22 @@ console.log(children.toString()) // => Gab,Leo,Jerome
 
 <b>Sorting</b>
 
+There are also a number of sorting methods that can be used on arrays which will change the order of elements.
 
+* `sort()` will sort an array alphabetically. Note that this alters the original array.
+```js
+let children = ["Gab", "Leo", "Jerome"]
+console.log(children.sort()) //=> [ 'Gab', 'Jerome', 'Leo' ]
+console.log(children) // => [ 'Gab', 'Jerome', 'Leo' ]
+```
+By default, this method sorts values as strings, so a compare function must be used to order numbers correctly.
 
+* `reverse()` will reverse the order of elements in the array. Similarly, this alters the existing array rather than creating a new one.
+```js
+let children = ["Gab", "Leo", "Jerome"]
+console.log(children.reverse()) //=> [ 'Jerome', 'Leo', 'Gab' ]
+console.log(children) // => [ 'Jerome', 'Leo', 'Gab' ]
+```
 
 <b>Iterating</b>
 
@@ -521,8 +535,6 @@ console.log(over2) // => [3, 10]
 ```
 
 Other iterating methods include `reduce()`, which runs a function on each array element to produce a single value running left to right, `reduceRight()`, which does the same thing running right to left. `every()` checks if all elements pass a test. `some()` checks if some elements pass a test. `lastIndexOf()` searches an array for an array value and returns its position. `find()` returns the value of the first array element that passes a test function. `findIndex()` return the index of that element. 
-
-
 
 References:
 - https://www.w3schools.com/js/js_array_methods.asp

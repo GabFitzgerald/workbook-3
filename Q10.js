@@ -37,12 +37,8 @@ function filterFunction(number) {
 // console.log(children) // => [ 'Gab', 'Leo' ]
 
 
+
+
 let children = ["Gab", "Leo", "Jerome"]
-
-let youngerChildren = children.slice(1)
-console.log(youngerChildren) // => [ 'Gab', 'Leo', 'Jerome' ]
-
-let middleChildren = children.slice(1, children.length - 1)
-console.log(middleChildren) // =>  [ 'Leo' ]
-
-console.log(children) // => [ 'Leo', 'Jerome' ]
+console.log(children.reverse()) //=> [ 'Jerome', 'Leo', 'Gab' ]
+console.log(children) // => [ 'Jerome', 'Leo', 'Gab' ]

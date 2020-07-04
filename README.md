@@ -395,7 +395,7 @@ References:
 - https://javascript.info/types
 - https://www.freecodecamp.org/news/how-did-i-miss-javascript-symbols-c1f1c0e1874a/#:~:text=Symbols%20are%20new%20primitive%20type,()%20which%20returns%20a%20Symbol.&text=Every%20time%20you%20call%20the,and%20unique%20symbol%20is%20created.
 
-## Question 10: Array manipulation
+## Question 10: Array Manipulation
 
 Arrays can be manipulated in a variety of ways from simple array methods, to sorting and iterations.
 
@@ -540,10 +540,93 @@ References:
 - https://www.w3schools.com/js/js_array_methods.asp
 
 
-## Question 11: Object manipulation
+## Question 11: Object Manipulation
+
+New objects can be declared with either the constructor or literal syntax:
+```js
+let me = new Object(); // "object constructor" syntax
+let me = {};  // "object literal" syntax
+```
+
+Objects can also have constructor methods written into them which are called every time a new instance is created. 
+```js
+function Person(firstName, lastName, age) {
+    this.firstName = firstName
+    this.lastName = lastName
+    this.age = age
+}
+
+let me = new Person("Gab", "Fitzgerald", 21)
+console.log(me) // => Person { firstName: 'Gab', lastName: 'Fitzgerald', age: 21 }
+```
+
+Object properties can be access and altered using dot or boxed-bracket notation:
+```js
+let me = {
+    firstName: "Gab",
+    lastName: "Fitzgerald",
+    age: 20
+}
+
+me.firstName = "Gabby"
+me["age"] = 21
+
+console.log(me) // => { firstName: 'Gabby', lastName: 'Fitzgerald', age: 21 }
+```
 
 
+There are a number of methods that can be used on objects to return arrays. The `values()` method will return an array of the values of an object. Similarly, the `keys()` method will return an array of the object's keys. The `entries()` method will create and array of key value pairs of an object.
+```js
+let me = {
+    firstName: "Gab",
+    lastName: "Fitzgerald",
+    age: 20
+}
 
+console.log(Object.values(me)) // => [ 'Gab', 'Fitzgerald', 20 ]
+console.log(Object.keys(me)) // => [ 'firstName', 'lastName', 'age' ]
+console.log(Object.entries(me)) // => [ [ 'firstName', 'Gab' ], [ 'lastName', 'Fitzgerald' ], [ 'age', 20 ] ]
+```
+
+Objects can be merged with Spread (...), which merges two objects returning a new object. Similarly, `assign() will take the objects as arguments, and combine them together.
+```js 
+let me = {
+    firstName: "Gab",
+    lastName: "Fitzgerald",
+    age: 20
+}
+
+let moreInfo = {
+    ...me,
+    username: "Gab678"
+}
+
+let address = {
+    suburb: "South Brisbane"
+}
+
+console.log(moreInfo) // => {firstName: 'Gab', lastName: 'Fitzgerald', age: 20, username: 'Gab678'}
+console.log(Object.assign(me, address)) // => {firstName: 'Gab', lastName: 'Fitzgerald', age: 20, suburb: 'South Brisbane'}
+```
+
+Declaring an object as a const still allows you to modify an object. The `freeze()` method prevents modifying existing properties or adding new properties to an object. 
+```js
+Object.freeze(me)
+me.firstName = "Gabby"
+console.log(me.firstName) // => Gab
+```
+
+The `seal()` prevents new properties from being added and marks all existing properties as non-configurable. THis means values of present properties can still be changed if the are writable.
+```js
+Object.seal(me)
+me.age = 21
+console.log(me.age) // =>21
+me.suburb = "South Brisbane"
+console.log(me.suburb) // => undefined
+```
+
+References:
+- https://medium.com/infancyit/javascript-object-manipulation-5d1145cf06ef
 
 ## Question 12
 JavaScript Object Notation (JSON) is a format that is easy for humans to read and write and for machines to parse and generate. In JavaScript, JSON is a string so it is not usable in JavaScript right away. The JSON string must first be passed through the JSON.parse method. For example rake the JSON string: 
